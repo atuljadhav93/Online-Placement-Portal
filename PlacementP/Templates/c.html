@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<!--bootstrap4 offline css apply-->
+		<link rel="stylesheet" href="{% static 'bootstrap css/bootstrap.min.css' %}">
+		<!--userdefined css apply-->
+		<link rel="stylesheet" type="text/css" href="{% static 'userdefined css/style.css' %}">
+		<!--bootstrap4 offline jquery apply-->
+		<script type="text/javascript" src="{% static 'bootstrap js/jquery.js' %}" ></script>
+		<!--bootstrap4 offline js apply-->
+		<script type="text/javascript" src="{% static 'bootstrap js/bootstrap.min.js' %}"></script>
+		<!--user defined js-->
+		<script type="text/javascript" src="{% static 'userdefined js/event.js' %}"></script>
+		<title>c</title>
+	</head>
+	<body class="pagecolor">
+		<div>
+			<div class="container">
+				<nav class="navbar navbar-expand-lg  navbar-light color fixed-top">
+					<a class="navbar-brand text-success" href="#">Train your skill</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="my">
+						<ul class="navbar-nav mr-auto mt-2 mt-lg-1">
+							<li class="nav-item">
+								<a class="nav-link" href="index">Home
+									<span class="sr-only">(current)</span>
+								</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="index" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Study Material
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+									<li class="dropdown-submenu">
+										<a class="dropdown-item" href="aptitude">
+											Aptitude
+										</a>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="dropdown-item dropdown-toggle" href="index">
+											Programming
+										</a>
+										<ul class="dropdown-menu">
+											<li>
+												<a class="dropdown-item" href="cnotes">C</a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="cppnotes">C++</a>
+											</li>
+											<li class="dropdown-submenu">
+												<a class="dropdown-item dropdown-toggle" href="index">Java</a>
+												<ul class="dropdown-menu">
+													<li>
+														<a class="dropdown-item" href="corejavanotes">
+															Core Java
+														</a>
+													</li>
+													<li>
+														<a class="dropdown-item" href="advancejavanotes">
+															Advanced Java
+														</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a class="dropdown-item" href="pythonnotes">
+													Python
+												</a>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="index" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Online Test</a>
+									<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+										<li class="dropdown-submenu">
+											<a class="dropdown-item dropdown-toggle" href="index">
+												Aptitude
+											</a>
+											<ul class="dropdown-menu">
+												<li>
+													<a class="dropdown-item" href="arithmetic">
+														Arithmetic
+													</a>
+												</li>
+												<li>
+													<a class="dropdown-item" href="datainterpretation">
+														Data Interpretation
+													</a>
+												</li>
+												<li>
+													<a class="dropdown-item" href="logical">
+														Logical
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-submenu">
+											<a class="dropdown-item dropdown-toggle" href="index">
+												Programming
+											</a>
+											<ul class="dropdown-menu">
+												<li>
+													<a class="dropdown-item" href="cquiz">C</a>
+												</li>
+												<li>
+													<a class="dropdown-item" href="cppquiz">C++</a>
+												</li>
+												<li class="dropdown-submenu">
+													<a class="dropdown-item dropdown-toggle" href="index">Java</a>
+													<ul class="dropdown-menu">
+														<li>
+															<a class="dropdown-item" href="corejavaquiz">
+																Core Java
+															</a>
+														</li>
+														<li>
+															<a class="dropdown-item" href="advancejavaquiz">
+																Advanced Java
+															</a>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<a class="dropdown-item" href="pythonquiz">Python</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-item dropdown dmenu">
+									<a class="nav-link dropdown-toggle" href="index" id="navbardrop" data-toggle="dropdown">
+										Student Corner
+									</a>
+									<div class="dropdown-menu sm-menu">
+										<a class="dropdown-item" href="index">Progess</a>
+										<a class="dropdown-item" href="index">Marks</a>
+										<a class="dropdown-item" href="index">Resume</a>
+									</div>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="contactus.html">Contact us</a>
+								</li>
+							</ul>
+							<form class="form-inline my-2 my-lg-0">
+								<ul class="navbar-nav mr-auto">
+									<li class="nav-item dropdown dmenu">
+										<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+											Hi...{{username}}
+										</a>
+										<div class="dropdown-menu sm-menu">
+											<a class="dropdown-item" href="#">View</a>
+											<a class="dropdown-item" href="#">Edit</a>
+											<a class="dropdown-item" href="logout">Logout</a>
+										</div>
+									</li>
+								</ul>
+							</form>
+						</div>
+					</div>
+				</nav>
+				<!--start boby content-->
+				<div class = "container jumbotron" style="padding: 10px; margin-top: 55px;">
+					<div class="row">
+						<div class="col-sm-8">
+							<h3>Placement Cell</h3>
+							Placement Cell is an integral part of the institute. The institute has provided complete infrastructure for effective functioning of the cell. Training activities are organized throughout the year in an effort towards preparing the prospective students for the campus selection programmes. The cell keeps on invites various industries and reputed firms for campus recruitment. The cell is sensitized to function all through the year towards generating placement and training opportunities for the students.
+						</div>
+						<div class="col-sm-4">
+							<img src="images/training.jpg" class="img-fluid img-thumbnail">
+						</div>
+					</div>
+				</div>
+				<!--create middle panel-->
+				<div class="container">
+					<div class="row jumbotron">
+						<div class="col-sm-4 col-lg-4">
+							<div class="">
+								<ul class="linkul">
+									<li class="linkli">
+										<i class="fa fa-angle-double-right">>></i>
+										<a href="quize.html">Input / Output</a>
+									</li>
+									<li class="linkli">
+										<i class="fa fa-angle-double-right">>></i>
+										<a href="quize.html">Bitwise Operation</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-4 col-lg-4">
+							<ul class="linkul">
+								<li class="linkli">
+									<i class="fa fa-angle-double-right">>></i>
+									<a href="quize.html">Declarations and Initializations</a>
+								</li>
+								<li class="linkli">
+									<i class="fa fa-angle-double-right">>></i>
+									<a href="quize.html">Memory Allocation</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-sm-4 col-lg-4">
+							<ul class="linkul">
+								<li class="linkli">
+									<i class="fa fa-angle-double-right">>></i>
+									<a href="quize.html">Typedef</a>
+								</li>
+								<li class="linkli">
+									<i class="fa fa-angle-double-right">>></i>
+									<a href="quize.html">Array</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-sm-4 col-lg-4">
+							<ul class="linkul">
+								<li class="linkli">
+									<i class="fa fa-angle-double-right">>></i>
+									<a href="quize.html">Pointer</a>
+								</li>
+								<li class="linkli">
+									<i class="fa fa-angle-double-right">>></i>
+									<a href="quize.html">Function</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-sm-4 col-lg-4">
+							<ul class="linkul">
+								<li class="linkli">
+									<i class="fa fa-angle-double-right">>></i>
+									<a href="quize.html">Structures, Union, Enum</a>
+								</li>
+								<li class="linkli">
+									<i class="fa fa-angle-double-right">>></i>
+									<a href="quize.html">String</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-sm-4 col-lg-4">
+							<ul class="linkul">
+								<li class="linkli">
+									<i class="fa fa-angle-double-right">>></i>
+									<a href="quize.html">Library Function</a>
+								</li>
+								<li class="linkli">
+									<i class="fa fa-angle-double-right">>></i>
+									<a href="quize.html">Complicated Declarations</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!--footer-->
+				<div class="container navbar-default">
+					<div class="row jumbotron">
+						<div class="col-sm-4">
+							<h3>Instant open</h3>
+							<ul>
+								<li>Marks</li>
+								<li>Online Test</li>
+							</ul>
+						</div>
+						<div class="col-sm-4">
+							<h3>Our Goal</h3>
+							<p>
+								Our goal is to provide a native platform
+								for students to prepare	for placements and
+								build more secure future. Sharing knowledge
+								to get better results in order to improve
+								students productivity is what we look for.
+							</p>
+						</div>
+						<div class="col-sm-4 contactbutton">
+							<div>
+								<h3>Connect with us</h3><br>
+								
+							</div>
+							<div class="">
+								<a href="contactus.html" class="button">Contactus</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</body>
+	</html>

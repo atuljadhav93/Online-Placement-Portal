@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<!--bootstrap4 offline css apply-->
+		<link rel="stylesheet" href="{% static 'bootstrap css/bootstrap.min.css' %}">
+		<!--userdefined css apply-->
+		<link rel="stylesheet" type="text/css" href="{% static 'userdefined css/style.css' %}">
+		<!--bootstrap4 offline jquery apply-->
+		<script type="text/javascript" src="{% static 'bootstrap js/jquery.js' %}" ></script>
+		<!--bootstrap4 offline js apply-->
+		<script type="text/javascript" src="{% static 'bootstrap js/bootstrap.min.js' %}"></script>
+		<!--user defined js-->
+		<script type="text/javascript" src="{% static 'userdefined js/event.js' %}"></script>
+		<title>advance java notes</title>
+	</head>
+	<body class="pagecolor">
+		<div>
+			<div class="container">
+				<nav class="navbar navbar-expand-lg  navbar-light color fixed-top">
+					<a class="navbar-brand text-success" href="#">Train your skill</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="my">
+						<ul class="navbar-nav mr-auto mt-2 mt-lg-1">
+							<li class="nav-item">
+								<a class="nav-link" href="index">Home
+									<span class="sr-only">(current)</span>
+								</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="index" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Study Material
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+									<li class="dropdown-submenu">
+										<a class="dropdown-item" href="aptitude">
+											Aptitude
+										</a>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="dropdown-item dropdown-toggle" href="index">
+											Programming
+										</a>
+										<ul class="dropdown-menu">
+											<li>
+												<a class="dropdown-item" href="cnotes">C</a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="cppnotes">C++</a>
+											</li>
+											<li class="dropdown-submenu">
+												<a class="dropdown-item dropdown-toggle" href="index">Java</a>
+												<ul class="dropdown-menu">
+													<li>
+														<a class="dropdown-item" href="corejavanotes">
+															Core Java
+														</a>
+													</li>
+													<li>
+														<a class="dropdown-item" href="advancejavanotes">
+															Advanced Java
+														</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a class="dropdown-item" href="pythonnotes">
+													Python
+												</a>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="index" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Online Test</a>
+									<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+										<li class="dropdown-submenu">
+											<a class="dropdown-item dropdown-toggle" href="index">
+												Aptitude
+											</a>
+											<ul class="dropdown-menu">
+												<li>
+													<a class="dropdown-item" href="arithmetic">
+														Arithmetic
+													</a>
+												</li>
+												<li>
+													<a class="dropdown-item" href="datainterpretation">
+														Data Interpretation
+													</a>
+												</li>
+												<li>
+													<a class="dropdown-item" href="logical">
+														Logical
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-submenu">
+											<a class="dropdown-item dropdown-toggle" href="index">
+												Programming
+											</a>
+											<ul class="dropdown-menu">
+												<li>
+													<a class="dropdown-item" href="cquiz">C</a>
+												</li>
+												<li>
+													<a class="dropdown-item" href="cppquiz">C++</a>
+												</li>
+												<li class="dropdown-submenu">
+													<a class="dropdown-item dropdown-toggle" href="index">Java</a>
+													<ul class="dropdown-menu">
+														<li>
+															<a class="dropdown-item" href="corejavaquiz">
+																Core Java
+															</a>
+														</li>
+														<li>
+															<a class="dropdown-item" href="advancejavaquiz">
+																Advanced Java
+															</a>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<a class="dropdown-item" href="pythonquiz">Python</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-item dropdown dmenu">
+									<a class="nav-link dropdown-toggle" href="index" id="navbardrop" data-toggle="dropdown">
+										Student Corner
+									</a>
+									<div class="dropdown-menu sm-menu">
+										<a class="dropdown-item" href="index">Progess</a>
+										<a class="dropdown-item" href="index">Marks</a>
+										<a class="dropdown-item" href="index">Resume</a>
+									</div>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="contactus.html">Contact us</a>
+								</li>
+							</ul>
+							<form class="form-inline my-2 my-lg-0">
+								<ul class="navbar-nav mr-auto">
+									<li class="nav-item dropdown dmenu">
+										<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+											Hi...{{username}}
+										</a>
+										<div class="dropdown-menu sm-menu">
+											<a class="dropdown-item" href="#">View</a>
+											<a class="dropdown-item" href="#">Edit</a>
+											<a class="dropdown-item" href="logout">Logout</a>
+										</div>
+									</li>
+								</ul>
+							</form>
+						</div>
+					</div>
+				</nav>
+				<!--start boby content-->
+				<div class = "container jumbotron" style="padding: 10px; margin-top: 55px;">
+					<div class="row">
+						<div class="col-sm-12">
+							<h3>Advance Java</h3>
+							<p class="notesstyle">
+								<br>
+								Introduction to JDBC<br>
+								Java Database Connectivity(JDBC) is an Application Programming Interface(API) used to connect Java application with Database. JDBC is used to interact with various type of Database such as Oracle, MS Access, My SQL and SQL Server. JDBC can also be defined as the platform-independent interface between a relational database and Java programming. It allows java program to execute SQL statement and retrieve result from database.<br><br>
+							</p>
+							<div class="text-center">
+								<img src="{% static 'images/jdbc.jpg' %}" alt="" class="img-fluid img-thumbnail">
+							</div>
+							<p class="notesstyle"><br><br>
+								What's new in JDBC 4.0<br>
+								JDBC 4.0 is new and advance specification of JDBC. It provides the following advance features.<br>
+								Connection Management<br>
+								Auto loading of Driver Interface.<br>
+								Better exception handling<br>
+								Support for large object<br>
+								Annotation in SQL query.<br><br>
+								JDBC Driver<br>
+								JDBC Driver is required to process SQL requests and generate result. The following are the different types of driver available in JDBC.<br><br>
+								Type-1 Driver or JDBC-ODBC bridge<br>
+								Type-2 Driver or Native API Partly Java Driver<br>
+								Type-3 Driver or Network Protocol Driver<br>
+								Type-4 Driver or Thin Driver<br><br>
+								JDBC-ODBC bridge<br>
+								Type-1 Driver act as a bridge between JDBC and other database connectivity mechanism(ODBC). This driver converts JDBC calls into ODBC calls and redirects the request to the ODBC driver.<br>
+							</p>
+							<div class="text-center">
+								<img src="{% static 'images/jdbc-driver1.jpg' %}" alt="" class="img-thumbnail img-fluid">
+							</div>
+							<p class="notesstyle"><br>
+								Advantage<br>
+								Easy to use<br>
+								Allow easy connectivity to all database supported by the ODBC Driver.<br><br>
+								Disadvantage<br>
+								Slow execution time<br>
+								Dependent on ODBC Driver.<br>
+								Uses Java Native Interface(JNI) to make ODBC call.<br><br>
+							</p>
+							<div class="text-center">
+								<img src="{% static 'images/jdbc-driver2.jpg' %}" alt="" class="img-thumbnail img-fluid">
+							</div>
+							<p class="notesstyle"><br><br>
+								Advantage<br>
+								faster as compared to Type-1 Driver
+								Contains additional features.<br><br>
+								Disadvantage<br>
+								Requires native library<br>
+								Increased cost of Applicatio<br><br>
+								Network Protocol Driver<br>
+								This driver translate the JDBC calls into a database server independent and Middleware server-specific calls. Middleware server further translate JDBC calls into database specific calls.<br>
+							</p>
+							<div class="text-center">
+								<img src="{% static 'images/jdbc-driver3.jpg' %}" alt="" class="img-thumbnail img-fluid">
+							</div>
+							<p class="notesstyle"><br><br>
+								Advantage<br>
+								Does not require any native library to be installed.<br>
+								Database Independency.<br>
+								Provide facility to switch over from one database to another database.<br><br>
+								Disadvantage<br>
+								Slow due to increase number of network call.<br>
+								Thin Driver<br>
+								This is Driver called Pure Java Driver because. This driver interact directly with database. It does not require any native database library, that is why it is also known as Thin Driver.<br>
+							</p>
+							<div class="text-center">
+								<img src="{% static 'images/jdbc-driver4.jpg' %}" alt="" class="img-thumbnail img-fluid">
+							</div>
+							<p class="notesstyle"><br><br>
+								Advantage<br>
+								Does not require any native library.<br>
+								Does not require any Middleware server.<br>
+								Better Performance than other driver.<br><br>
+								Disadvantage
+								Slow due to increase number of network call.<br><br>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--footer-->
+			<div class="container navbar-default">
+				<div class="row jumbotron">
+					<div class="col-sm-4">
+						<h3>Instant open</h3>
+						<ul>
+							<li>Marks</li>
+							<li>Online Test</li>
+						</ul>
+					</div>
+					<div class="col-sm-4">
+						<h3>Our Goal</h3>
+						<p>
+							Our goal is to provide a native platform
+							for students to prepare	for placements and
+							build more secure future. Sharing knowledge
+							to get better results in order to improve
+							students productivity is what we look for.
+						</p>
+					</div>
+					<div class="col-sm-4 contactbutton">
+						<div>
+							<h3>Connect with us</h3><br>
+							
+						</div>
+						<div class="">
+							<a href="contactus.html" class="button">Contactus</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

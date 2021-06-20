@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<!--bootstrap4 offline css apply-->
+		<link rel="stylesheet" href="{% static 'bootstrap css/bootstrap.min.css' %}">
+		<!--userdefined css apply-->
+		<link rel="stylesheet" type="text/css" href="{% static 'userdefined css/style.css' %}">
+		<!--bootstrap4 offline jquery apply-->
+		<script type="text/javascript" src="{% static 'bootstrap js/jquery.js' %}" ></script>
+		<!--bootstrap4 offline js apply-->
+		<script type="text/javascript" src="{% static 'bootstrap js/bootstrap.min.js' %}"></script>
+		<!--user defined js-->
+		<script type="text/javascript" src="{% static 'userdefined js/event.js' %}"></script>
+		<title>python notes</title>
+	</head>
+	<body class="pagecolor">
+		<div>
+			<div class="container">
+				<nav class="navbar navbar-expand-lg  navbar-light color fixed-top">
+					<a class="navbar-brand text-success" href="#">Train your skill</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="my">
+						<ul class="navbar-nav mr-auto mt-2 mt-lg-1">
+							<li class="nav-item">
+								<a class="nav-link" href="index">Home
+									<span class="sr-only">(current)</span>
+								</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="index" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Study Material
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+									<li class="dropdown-submenu">
+										<a class="dropdown-item" href="aptitude">
+											Aptitude
+										</a>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="dropdown-item dropdown-toggle" href="index">
+											Programming
+										</a>
+										<ul class="dropdown-menu">
+											<li>
+												<a class="dropdown-item" href="cnotes">C</a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="cppnotes">C++</a>
+											</li>
+											<li class="dropdown-submenu">
+												<a class="dropdown-item dropdown-toggle" href="index">Java</a>
+												<ul class="dropdown-menu">
+													<li>
+														<a class="dropdown-item" href="corejavanotes">
+															Core Java
+														</a>
+													</li>
+													<li>
+														<a class="dropdown-item" href="advancejavanotes">
+															Advanced Java
+														</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a class="dropdown-item" href="pythonnotes">
+													Python
+												</a>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="index" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Online Test</a>
+									<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+										<li class="dropdown-submenu">
+											<a class="dropdown-item dropdown-toggle" href="index">
+												Aptitude
+											</a>
+											<ul class="dropdown-menu">
+												<li>
+													<a class="dropdown-item" href="arithmetic">
+														Arithmetic
+													</a>
+												</li>
+												<li>
+													<a class="dropdown-item" href="datainterpretation">
+														Data Interpretation
+													</a>
+												</li>
+												<li>
+													<a class="dropdown-item" href="logical">
+														Logical
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-submenu">
+											<a class="dropdown-item dropdown-toggle" href="index">
+												Programming
+											</a>
+											<ul class="dropdown-menu">
+												<li>
+													<a class="dropdown-item" href="cquiz">C</a>
+												</li>
+												<li>
+													<a class="dropdown-item" href="cppquiz">C++</a>
+												</li>
+												<li class="dropdown-submenu">
+													<a class="dropdown-item dropdown-toggle" href="index">Java</a>
+													<ul class="dropdown-menu">
+														<li>
+															<a class="dropdown-item" href="corejavaquiz">
+																Core Java
+															</a>
+														</li>
+														<li>
+															<a class="dropdown-item" href="advancejavaquiz">
+																Advanced Java
+															</a>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<a class="dropdown-item" href="pythonquiz">Python</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-item dropdown dmenu">
+									<a class="nav-link dropdown-toggle" href="index" id="navbardrop" data-toggle="dropdown">
+										Student Corner
+									</a>
+									<div class="dropdown-menu sm-menu">
+										<a class="dropdown-item" href="index">Progess</a>
+										<a class="dropdown-item" href="index">Marks</a>
+										<a class="dropdown-item" href="index">Resume</a>
+									</div>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="contactus.html">Contact us</a>
+								</li>
+							</ul>
+							<form class="form-inline my-2 my-lg-0">
+								<ul class="navbar-nav mr-auto">
+									<li class="nav-item dropdown dmenu">
+										<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+											Hi...{{username}}
+										</a>
+										<div class="dropdown-menu sm-menu">
+											<a class="dropdown-item" href="#">View</a>
+											<a class="dropdown-item" href="#">Edit</a>
+											<a class="dropdown-item" href="logout">Logout</a>
+										</div>
+									</li>
+								</ul>
+							</form>
+						</div>
+					</div>
+				</nav>
+				<!--start boby content-->
+				<div class = "container jumbotron" style="padding: 10px; margin-top: 55px;">
+					<div class="row">
+						<div class="col-sm-12">
+							<h3>Python</h3>
+							<p class="notesstyle">
+								<br>
+								Python is a general-purpose interpreted, interactive, object-oriented, and high-level programming language. It was created by Guido van Rossum during 1985- 1990. Like Perl, Python source code is also available under the GNU General Public License (GPL).<br> This tutorial gives enough understanding on Python programming language.<br><br>
+								Why to Learn Python?<br>
+								Python is a high-level, interpreted, interactive and object-oriented scripting language. Python is designed to be highly readable. It uses English keywords frequently where as other languages use punctuation, and it has fewer syntactical constructions than other languages.<br>
+								Python is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Web Development Domain. I will list down some of the key advantages of learning Python:<br><br>
+								Python is Interpreted − <br>Python is processed at runtime by the interpreter. You do not need to compile your program before executing it. This is similar to PERL and PHP.<br><br>
+								Python is Interactive −<br> You can actually sit at a Python prompt and interact with the interpreter directly to write your programs.<br><br>
+								Python is Object-Oriented − <br>Python supports Object-Oriented style or technique of programming that encapsulates code within objects.<br><br>
+								Python is a Beginner's Language −<br> Python is a great language for the beginner-level programmers and supports the development of a wide range of applications from simple text processing to WWW browsers to games.<br><br>
+								Characteristics of Python<br>
+								Following are important characteristics of Python<br><br>Programming −<br>
+								It supports functional and structured programming methods as well as OOP.<br><br>
+								It can be used as a scripting language or can be compiled to byte-code for building large applications.<br><br>
+								It provides very high-level dynamic data types and supports dynamic type checking.<br>
+								It supports automatic garbage collection.<br>
+								It can be easily integrated with C, C++, COM, ActiveX, CORBA, and Java.<br><br>
+								Hello World using Python.<br>
+								Just to give you a little excitement about Python, I'm going to give you a small conventional Python Hello World program, You can try it using Demo link.<br><br>
+								Live Demo<br>
+								print ("Hello, Python!");<br><br>
+								Applications of Python<br>
+								As mentioned before, Python is one of the most widely used language over the web. I'm going to list few of them here:
+								Easy-to-learn − <br>Python has few keywords, simple structure, and a clearly defined syntax. This allows the student to pick up the language quickly.<br><br>
+								Easy-to-read − <br>Python code is more clearly defined and visible to the eyes.<br><br>
+								Easy-to-maintain − <br>Python's source code is fairly easy-to-maintain.<br><br>
+								A broad standard library − <br>Python's bulk of the library is very portable and cross-platform compatible on UNIX, Windows, and Macintosh.<br><br>
+								Interactive Mode −<br> Python has support for an interactive mode which allows interactive testing and debugging of snippets of code.<br><br>
+								Portable −<br> Python can run on a wide variety of hardware platforms and has the same interface on all platforms.<br><br>
+								Extendable −<br> You can add low-level modules to the Python interpreter. These modules enable programmers to add to or customize their tools to be more efficient.<br><br>
+								Databases −<br> Python provides interfaces to all major commercial databases.<br><br>
+								GUI Programming − <br>Python supports GUI applications that can be created and ported to many system calls, libraries and windows systems, such as Windows MFC, Macintosh, and the X Window system of Unix.<br><br>
+								Scalable −<br> Python provides a better structure and support for large programs than shell scripting.<br><br>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--footer-->
+			<div class="container navbar-default">
+				<div class="row jumbotron">
+					<div class="col-sm-4">
+						<h3>Instant open</h3>
+						<ul>
+							<li>Marks</li>
+							<li>Online Test</li>
+						</ul>
+					</div>
+					<div class="col-sm-4">
+						<h3>Our Goal</h3>
+						<p>
+							Our goal is to provide a native platform
+							for students to prepare	for placements and
+							build more secure future. Sharing knowledge
+							to get better results in order to improve
+							students productivity is what we look for.
+						</p>
+					</div>
+					<div class="col-sm-4 contactbutton">
+						<div>
+							<h3>Connect with us</h3><br>
+							
+						</div>
+						<div class="">
+							<a href="contactus.html" class="button">Contactus</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

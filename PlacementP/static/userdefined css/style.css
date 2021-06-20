@@ -1,0 +1,727 @@
+/*start form margin and padding*/
+.sizereduceform
+{
+  margin:0px;
+  padding: 0px;
+}
+.signupteacherwidth
+{
+  width: 800px;
+  margin: 5px;
+  padding: 5px;
+}
+.signupformwidth
+{
+  width: 800px;
+}
+/*stop form margin and paddfing*/
+/*start site background style*/
+.pagecolor
+{
+background-color: #C5CBE3;
+height: auto;
+}
+.box 
+{
+padding: 1rem 1rem;
+margin-bottom: 2rem;
+background-color: #e9ecef;
+border-radius: 0.2rem;
+}
+@media (min-width: 576px)
+{
+	.box 
+	{
+		padding: 3rem 2rem;
+	}
+}
+/*stop site background style*/
+/*start navbar style*/
+.navbar
+{
+    background: #333D79FF !important;
+}
+
+.dropdown{
+    border-radius:0;
+    border:0;
+}
+.dropdown-menu{
+    background: #A2A2A1FF;
+    border:0;
+    top:80%;
+    border-radius:0px 0px 5px 5px;
+}
+.dropdown-item:hover{
+    background:#085ca5;
+    color:#fff;
+}
+.dropdown-menu a{
+    color:#fff;
+} 
+.navbar .nav-item .nav-link{
+    color:#eee !important; 
+    
+}
+.navbar .nav-item .nav-link:hover .navbar .nav-item .nav-link{
+    color:red !important;
+    
+}
+/*stop navbar style*/
+/*start navbar dropdown submenu hover*/
+.navbar-nav li:hover > ul.dropdown-menu
+    {
+      display: block;
+    }
+    .dropdown-submenu 
+    {
+      position:relative;
+    }
+    .dropdown-submenu>.dropdown-menu 
+    {
+      top: 0;
+      left: 100%;
+      margin-top:-6px;
+    }
+    /* rotate caret on hover */
+    .dropdown-menu > li > a:hover:after
+    {
+      text-decoration: underline;
+      transform: rotate(-90deg);
+    }
+/*end navbar dropdown submenu hover*/
+/*start collapse panel body*/
+.row{
+    margin-top:40px;
+    padding: 0 10px;
+}
+
+.clickable{
+    cursor: pointer;   
+}
+
+.panel-heading span {
+  margin-top: -20px;
+  font-size: 15px;
+}
+/*end collapse panel body*/
+/*start body panel stylesheet*/
+.contacttext
+{
+text-align: center;
+margin-top: 50px;
+font-family: serif;
+font-size: 20px;
+font-weight: bold;
+}
+.buttonstyle
+{
+border-radius: 12px;
+padding: 8px 20px;
+font-size: 15px;
+font-family: serif;
+width: 150px;
+}
+/*stop body panel stylesheet*/
+/*start body content link style*/
+.linkul
+{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.linkli
+{
+  height : 47px;
+  background-position: 5px;
+  padding-left: 20px;
+}
+.arrowsize
+{
+  font-size:28px;
+  content: '»';
+}
+/*stop body content link style*/
+/*start footer social media buttons*/
+.fa {
+padding: 20px;
+font-size: 20px;
+width: 50px;
+text-align: center;
+text-decoration: none;
+margin: 5px 2px;
+border-radius: 50%;
+}
+.fa:hover {
+opacity: 0.7;
+}
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+.fa-linkedin {
+background: #007bb5;
+color: white;
+}
+.fa-youtube {
+background: #bb0000;
+color: white;
+}
+/*stop footer social media buttons*/
+/*start login page style*/
+.formbody
+{
+font-family: serif;
+font-size: 16px;
+background: #C5CBE3;
+color: #666;
+}
+.login-container
+{
+height: 630px;
+}
+.login-form
+{
+max-width: 100%;
+width: 370px;
+padding: 15px;
+margin: auto;
+}
+.form-control
+{
+font-size: 15px;
+min-height: 48px;
+font-weight: 500;
+}
+.form-control:focus
+{
+border-color: #723dbe;
+box-shadow: 0 0 0.2rem rgba(114, 61, 190, .25);
+}
+.forgot-link
+{
+font-size: 13px;
+}
+.forgot-link label
+{
+margin-bottom: 0;
+}
+.login-form
+{
+text-decoration: none;
+color: #666;
+}
+.login-form a
+{
+text-decoration: none;
+color: #666;
+}
+.login-form a:hover
+{
+color: #723dbe;
+}
+.btn-custom
+{
+background: #723dbe;
+border-color: #723dbe;
+color: #fff;
+font-size: 15px;
+font-weight: 600;
+min-height: 48px;
+}
+.btn-custom:focus,
+.btn-custom:hover,
+.btn-custom:active,
+.btn-custom:active:focus
+{
+background: #54229d;
+border-color: #54229d;
+color: #fff;
+}
+/*stop login page style*/
+/*start dynamically textarea style*/
+.swingX,.swingY {
+perspective: 200px;
+}
+.swingX div {
+opacity: 0;
+transform: rotateX(-90deg);
+transition: all 0.5s cubic-bezier(.36,-0.64,.34,1.76);
+}
+.swingY div {
+opacity: 0;
+transform: rotateY(-90deg);
+transition: all 0.5s cubic-bezier(.36,-0.64,.34,1.76);
+}
+.swingX div.show,.swingY div.show {
+opacity: 1;
+transform: none;
+transition: all 0.5s cubic-bezier(.36,-0.64,.34,1.76);
+}
+/*stop dynamically textarea style*/
+/*start registration animation button code*/
+.buttonnext{
+border-radius: 2px;
+background-color: #723dbe;
+border: none;
+color: #fff;
+text-align: center;
+font-family: serif;
+padding: 13px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 25px;
+box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+font-size: 15px;
+font-weight: 600;
+height: 50px;
+width: 140px;
+}
+.buttonnext{
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+.buttonnext:after {
+content: '»';
+position: absolute;
+opacity: 0;
+top: 10px;
+right: -20px;
+transition: 0.5s;
+}
+.buttonnext:hover{
+padding-right: 24px;
+padding-left:8px;
+}
+.buttonnext:hover:after {
+opacity: 1;
+right: 10px;
+}
+.buttonback {
+border-radius: 2px;
+background-color: #723dbe;
+border: none;
+color: #fff;
+text-align: center;
+font-family: serif;
+padding: 13px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 25px;
+box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+font-size: 15px;
+font-weight: 600;
+height: 50px;
+width: 140px;
+}
+.buttonback{
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+.buttonback:after {
+/*content: '»';*/
+position: absolute;
+opacity: 0;
+top: 10px;
+left: -20px;
+transition: 0.5s;
+}
+.buttonback:hover{
+padding-left: 24px;
+}
+.buttonback:hover:after {
+opacity: 1;
+right: 10px;
+}
+/*stop registration animation button code*/
+/*start quize skip button css style*/
+.buttonskip
+{
+border-radius: 2px;
+background-color: #723dbe;
+border: none;
+color: #fff;
+text-align: center;
+font-family: serif;
+padding: 13px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 25px;
+box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+font-size: 15px;
+font-weight: 600;
+height: 50px;
+width: 140px;
+}
+.buttonskip{
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+.buttonskip:after {
+content: '»';
+position: absolute;
+opacity: 0;
+top: 10px;
+right: -20px;
+transition: 0.5s;
+}
+.buttonskip:hover{
+padding-right: 24px;
+padding-left:8px;
+background-color: red;
+}
+.buttonskip:hover:after {
+opacity: 1;
+right: 10px;
+}
+/*end quize skip button css style*/
+/*start registration form submit and textarea add button css*/
+.buttonsubmit{
+border-radius: 2px;
+background-color: #723dbe;
+border: none;
+color: #fff;
+text-align: center;
+font-family: serif;
+padding: 13px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 25px;
+box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+font-size: 15px;
+font-weight: 600;
+height: 50px;
+width: 140px;
+}
+.buttonsubmit{
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+/*stop registration form submit and textarea button css*/
+/*start registration form text style*/
+.textlayout
+{
+font-style: normal;
+font-family: serif;
+font-size: 15px;
+font-weight: bold;
+}
+/*stop registration form text style*/
+/*start date error massage color*/
+.error
+{
+color: Red;
+}
+/*end date error massage color*/
+/*start dynamically dropdown select inputbox and textara css style*/
+.dropselect
+{
+appearance: none; outline: 0;
+background: none;
+background-image: none;
+width: 100%;
+height: 100%;
+color: black;
+cursor: pointer;
+border:1px solid black;
+border-radius:3px;
+margin-left: 90px;
+}
+.dropselect {
+position: relative;
+display: block;
+width: 15em;
+height: 2em;
+line-height: 3;
+overflow: hidden;
+border-radius: .25em;
+padding-bottom:10px;
+
+}
+.addbuttonstyle
+{
+margin-left: 120px;
+}
+/*end dynamically dropdown select inputbox and textara css style*/
+/*start contact us footer button style*/
+.button 
+{
+  display: inline-block;
+  padding: .75rem 1.25rem;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: .15rem;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  text-decoration: none;
+}
+.button:after 
+{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333D79FF;
+  border-radius: 10rem;
+  z-index: -2;
+}
+.button:before
+{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #008fb3;
+  transition: all .3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+.button:hover 
+{
+  color: #fff;
+  text-decoration: none;
+}
+.button:hover:before 
+{
+  width: 100%;
+  text-decoration: none;
+}
+.contactbutton 
+{
+  padding-top: 3px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+/*end contact us footer button style*/
+/*start quize css style*/
+#sidebar-wrapper 
+{
+min-height: 100vh;
+margin-left: -15rem;
+-webkit-transition: margin .25s ease-out;
+-moz-transition: margin .25s ease-out;
+-o-transition: margin .25s ease-out;
+transition: margin .25s ease-out;
+}
+#sidebar-wrapper .sidebar-heading 
+{
+padding: 0.875rem 1.25rem;
+font-size: 1.2rem;
+}
+#sidebar-wrapper .list-group
+{
+width: 14rem;
+}
+#page-content-wrapper
+{
+min-width: 100vw;
+}
+#wrapper.toggled #sidebar-wrapper 
+{
+margin-left: 0;
+}
+@media (min-width: 768px)
+{
+  #sidebar-wrapper 
+  {
+  margin-left: 0;
+  }
+  #page-content-wrapper 
+  {
+  min-width: 0;
+  width: 100%;
+  }
+  #wrapper.toggled #sidebar-wrapper
+  {
+  margin-left: -14rem;
+  }
+}
+/*stop quize css style*/
+/*start quize question and answer css style*/
+/*.space
+      {
+        word-wrap: break-word;
+        white-space: pre;
+      }*/
+      .quizefontstyle
+      {
+        font-family: "Times New Roman", Times, serif;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 23px;
+        font-variant: normal;
+        font-stretch: extra-condensed;
+        letter-spacing: 1px;
+        word-spacing:0px;
+        text-decoration: none;
+        text-transform: none;
+        color: #000000;
+      }
+      /*start quize radiobutton css style*/
+      /* The container */
+      .quzieradioanswereffect {
+      display: block;
+      position: relative;
+      padding-left: 35px;
+      margin-bottom: 12px;
+      cursor: pointer;
+      font-size: 22px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      }
+      /* Hide the browser's default radio button */
+      .inputeffect {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      }
+      /* Create a custom radio button */
+      .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 25px;
+      width: 25px;
+      background-color: #eee;
+      border-radius: 50%;
+      }
+      /* On mouse-over, add a grey background color */
+      .quzieradioanswereffect:hover inputeffect ~ .checkmark {
+      background-color: #ccc;
+      }
+      /* When the radio button is checked, add a blue background */
+      .inputeffect:checked ~ .checkmark {
+      background-color: green;
+      }
+      /* Create the indicator (the dot/circle - hidden when not checked) */
+      .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+      }
+      /* Show the indicator (dot/circle) when checked */
+      .inputeffect:checked ~ .checkmark:after {
+      display: block;
+      }
+      /* Style the indicator (dot/circle) */
+      .quzieradioanswereffect .checkmark:after {
+      top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+      }
+      .answerwidth
+      {
+        margin-left: 35px;
+      }
+            /*stop quize radiobutton css style*/
+      /*start quize checkbox css style*/
+      /* The container */
+      .quziecheckboxnswereffect {
+      display: block;
+      position: relative;
+      padding-left: 35px;
+      margin-bottom: 12px;
+      cursor: pointer;
+      font-size: 22px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      }
+      /* Hide the browser's default checkbox */
+      .checkinput {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+      }
+      /* Create a custom checkbox */
+      .checkboxmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 25px;
+      width: 25px;
+      background-color: #eee;
+      }
+      /* On mouse-over, add a grey background color */
+      .quziecheckboxnswereffect:hover checkinput ~ .checkboxmark {
+      background-color: #ccc;
+      }
+      /* When the checkbox is checked, add a blue background */
+      .checkinput:checked ~ .checkboxmark {
+      background-color: green;
+      }
+      /* Create the checkmark/indicator (hidden when not checked) */
+      .checkboxmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+      }
+      /* Show the checkmark when checked */
+      .checkinput:checked ~ .checkboxmark:after {
+      display: block;
+      }
+      /* Style the checkmark/indicator */
+      .quziecheckboxnswereffect .checkboxmark:after {
+      left: 9px;
+      top: 5px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      }
+      /*stop quize checkbox css style*/
+/*end quize question and answer css style*/
+/*start quize footer style*/
+.quizefooter
+{
+  left: 225;
+  width: 100%;
+  height: auto;
+  background-color: lightgray;
+}
+/*end quize footer style*/
+/*start student and teacher registration form star style*/
+.startstyle
+{
+  color: red;
+  font-size: 20px;
+}
+/*end student and teacher registration form star style*/
+/*start notes paragraph style*/
+.notesstyle
+{
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-stretch: extra-expanded;
+}
+/*end notes paragraph style*/

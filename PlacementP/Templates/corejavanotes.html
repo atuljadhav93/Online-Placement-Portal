@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<!--bootstrap4 offline css apply-->
+		<link rel="stylesheet" href="{% static 'bootstrap css/bootstrap.min.css' %}">
+		<!--userdefined css apply-->
+		<link rel="stylesheet" type="text/css" href="{% static 'userdefined css/style.css' %}">
+		<!--bootstrap4 offline jquery apply-->
+		<script type="text/javascript" src="{% static 'bootstrap js/jquery.js' %}" ></script>
+		<!--bootstrap4 offline js apply-->
+		<script type="text/javascript" src="{% static 'bootstrap js/bootstrap.min.js' %}"></script>
+		<!--user defined js-->
+		<script type="text/javascript" src="{% static 'userdefined js/event.js' %}"></script>
+		<title>corejava notes</title>
+	</head>
+	<body class="pagecolor">
+		<div>
+			<div class="container">
+				<nav class="navbar navbar-expand-lg  navbar-light color fixed-top">
+					<a class="navbar-brand text-success" href="#">Train your skill</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="my">
+						<ul class="navbar-nav mr-auto mt-2 mt-lg-1">
+							<li class="nav-item">
+								<a class="nav-link" href="index">Home
+									<span class="sr-only">(current)</span>
+								</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="index" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Study Material
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+									<li class="dropdown-submenu">
+										<a class="dropdown-item" href="aptitude">
+											Aptitude
+										</a>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="dropdown-item dropdown-toggle" href="index">
+											Programming
+										</a>
+										<ul class="dropdown-menu">
+											<li>
+												<a class="dropdown-item" href="cnotes">C</a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="cppnotes">C++</a>
+											</li>
+											<li class="dropdown-submenu">
+												<a class="dropdown-item dropdown-toggle" href="index">Java</a>
+												<ul class="dropdown-menu">
+													<li>
+														<a class="dropdown-item" href="corejavanotes">
+															Core Java
+														</a>
+													</li>
+													<li>
+														<a class="dropdown-item" href="advancejavanotes">
+															Advanced Java
+														</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a class="dropdown-item" href="pythonnotes">
+													Python
+												</a>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="index" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Online Test</a>
+									<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+										<li class="dropdown-submenu">
+											<a class="dropdown-item dropdown-toggle" href="index">
+												Aptitude
+											</a>
+											<ul class="dropdown-menu">
+												<li>
+													<a class="dropdown-item" href="arithmetic">
+														Arithmetic
+													</a>
+												</li>
+												<li>
+													<a class="dropdown-item" href="datainterpretation">
+														Data Interpretation
+													</a>
+												</li>
+												<li>
+													<a class="dropdown-item" href="logical">
+														Logical
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-submenu">
+											<a class="dropdown-item dropdown-toggle" href="index">
+												Programming
+											</a>
+											<ul class="dropdown-menu">
+												<li>
+													<a class="dropdown-item" href="cquiz">C</a>
+												</li>
+												<li>
+													<a class="dropdown-item" href="cppquiz">C++</a>
+												</li>
+												<li class="dropdown-submenu">
+													<a class="dropdown-item dropdown-toggle" href="index">Java</a>
+													<ul class="dropdown-menu">
+														<li>
+															<a class="dropdown-item" href="corejavaquiz">
+																Core Java
+															</a>
+														</li>
+														<li>
+															<a class="dropdown-item" href="advancejavaquiz">
+																Advanced Java
+															</a>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<a class="dropdown-item" href="pythonquiz">Python</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-item dropdown dmenu">
+									<a class="nav-link dropdown-toggle" href="index" id="navbardrop" data-toggle="dropdown">
+										Student Corner
+									</a>
+									<div class="dropdown-menu sm-menu">
+										<a class="dropdown-item" href="index">Progess</a>
+										<a class="dropdown-item" href="index">Marks</a>
+										<a class="dropdown-item" href="index">Resume</a>
+									</div>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="contactus.html">Contact us</a>
+								</li>
+							</ul>
+							<form class="form-inline my-2 my-lg-0">
+								<ul class="navbar-nav mr-auto">
+									<li class="nav-item dropdown dmenu">
+										<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+											Hi...{{username}}
+										</a>
+										<div class="dropdown-menu sm-menu">
+											<a class="dropdown-item" href="#">View</a>
+											<a class="dropdown-item" href="#">Edit</a>
+											<a class="dropdown-item" href="logout">Logout</a>
+										</div>
+									</li>
+								</ul>
+							</form>
+						</div>
+					</div>
+				</nav>
+				<!--start boby content-->
+				<div class = "container jumbotron" style="padding: 10px; margin-top: 55px;">
+					<div class="row">
+						<div class="col-sm-12">
+							<h3>C++ Programming</h3>
+							<p class="notesstyle">
+								<br>
+								Introduction to Java<br><br>
+								Java is one of the world's most important and widely used computer languages, and it has held this distinction for many years.<br>
+								Unlike some other computer languages whose influence has weared with passage of time, while Java's has grown.<br>
+								Java is a high level, robust, object-oriented and a secure and stable programming language but it is not a pure object-oriented language because it supports primitive data types like int, char etc.<br>
+								Java is a platform-independent language because it has runtime environment i.e JRE and API. Here platform means a hardware or software environment in which anapplication runs.
+								Java codes are compiled into byte code or machine-independent code. This byte code is run on JVM (Java Virtual Machine).<br><br>
+								
+								The syntax is Java is almost the same as C/C++. But java does not support low-level programming functions like pointers.<br> The codes in Java is always written in the form of Classes and objects.<br>
+								As of 2020, Java is one of the most popular programming languages in use, especially for client-server web applications.Its has been estimated that there are around nine million Java developers inside the world.<br><br>
+								Creation of Java<br>
+								Java was developed by James Ghosling, Patrick Naughton, Mike Sheridan at Sun Microsystems Inc. in 1991. It took 18 months to develop the first working version.<br>
+								The initial name was Oak but it was renamed to Java in 1995 as OAK was a registered trademark of another Tech company.<br><br>
+								History of Java<br>
+								Originally Java was designed for Interactive television, but this technology was very much advanced for the industry of digital cable television at that time. Java history was started with the Green Team. <br>The Green Team started a project to develop a language for digital devices such as television. But it works best for internet programming. <br>After some time Java technology was joined by Netscape.
+								The objective to create Java Programming Language was it should be "Simple, Robust, Portable, Platform-independent, Secured, High Performance, Multithreaded, Object-Oriented, Interpreted, and Dynamic".<br><br>
+								Features of Java<br>
+								The prime reason behind creation of Java was to bring portability and security feature into a computer language. Beside these two major features, there were many other features that played an important role in moulding out the final form of this outstanding language. Those features are :<br><br>
+								1) Simple<br>
+								Java is easy to learn and its syntax is quite simple, clean and easy to understand.The confusing and ambiguous concepts of C++ are either left out in Java or they have been re-implemented in a cleaner way.<br>
+								Eg : Pointers and Operator Overloading are not there in java but were an important part of C++.<br><br>
+								2) Object Oriented<br>
+								In java, everything is an object which has some data and behaviour. Java can be easily extended as it is based on Object Model. Following are some basic concept of OOP's.<br>
+								1) Object<br>
+								2) Class<br>
+								3) Inheritance<br>
+								4) Polymorphism<br>
+								5) Abstraction<br>
+								6) Encapsulation<br>
+								3) Robust<br>
+								Java makes an effort to eliminate error prone codes by emphasizing mainly on compile time error checking and runtime checking. But the main areas which Java improved were Memory Management and mishandled Exceptions by introducing automatic Garbage Collector and Exception Handling.<br><br>
+								4) Platform Independent<br>
+								Unlike other programming languages such as C, C++ etc which are compiled into platform specific machines. Java is guaranteed to be write-once, run-anywhere language.
+								On compilation Java program is compiled into bytecode. This bytecode is platform independent and can be run on any machine, plus this bytecode format also provide security. Any machine with Java Runtime Environment can run Java Programs.<br><br>
+							</p>
+							<div class="text-center">
+								<img src="images/java.jpg" alt="" class="img-fluid img-thumbnail">
+							</div>
+							<p class="notesstyle">
+								5) Secure<br>
+								When it comes to security, Java is always the first choice. With java secure features it enable us to develop virus free, temper free system. Java program always runs in Java runtime environment with almost null interaction with system OS, hence it is more secure.<br><br>
+								6) Multi Threading<br>
+								Java multithreading feature makes it possible to write program that can do many tasks simultaneously. Benefit of multithreading is that it utilizes same memory and other resources to execute multiple threads at the same time, like While typing, grammatical errors are checked along.<br><br>
+								7) Architectural Neutral<br>
+								Compiler generates bytecodes, which have nothing to do with a particular computer architecture, hence a Java program is easy to intrepret on any machine.<br>
+								8) Portable<br>
+								Java Byte code can be carried to any platform. No implementation dependent features. Everything related to storage is predefined, example: size of primitive data types<br><br>
+								9) High Performance<br>
+								Java is an interpreted language, so it will never be as fast as a compiled language like C or C++. But, Java enables high performance with the use of just-in-time compiler.<br><br>
+								10) Distributed<br>
+								Java is also a distributed language. Programs can be designed to run on computer networks. Java has a special class library for communicating using TCP/IP protocols. Creating network connections is very much easy in Java as compared to C/C++.<br><br>
+								New Features of JAVA 8<br>
+								Below mentioned are some of the core upgrades done as a part of Java 8 release. Just go through them quickly, we will explore them in details later.<br>
+								Enhanced Productivity by providing Optional Classes feature, Lamda Expressions, Streams etc.<br><br>
+								1) Ease of Use<br>
+								2) Improved Polyglot programming.<br>
+								3) A Polyglot is a program or script, written in a form which is valid in multiple programming languages and it performs the same operations in multiple programming languages. So Java now supports such type of programming technique.<br>
+								4)Improved Security and performance.<br><br>
+								Java Editions<br>
+								Java Editions or we can say the platform is a collection of programs which helps to develop and run the programs that are written in Java Programming language. Java Editions includes execution engine, compiler and set of libraries. As Java is Platform independent language so it is not specific to any processor or operating system.<br><br>
+								1. Java Standard Edition<br>
+								Java Standard edition is a computing platform which is used for development and deployment of portable code that is used in desktop and server environments. Java Standard Edition is also known as Java 2 Platform, Standard Edition (J2SE).
+								Java Standard Edition has a wide range of APIs such as Java Class Library etc. the best implementation of Java SE is Oracle Corporation’s Java Development Kit (JDK).<br><br>
+								2. Java Micro Edition<br>
+								Java Micro Edition is a computing platform which is used for the development and deployment of portable codes for the embedded and mobile devices. Java Micro Edition is also known as Java 2 Platform Micro Edition (J2ME). The Java Micro Edition was designed by Sun Microsystems and then later on Oracle corporation acquired it in 2010.
+								Example: micro-controllers, sensors, gateways, mobile phones, printers etc.<br><br>
+								3. Java Enterprise Edition<br>
+								Java Enterprise Edition is a set of specifications and extending Java SE 8 with features such as distributed computing and web services. The applications of Java Enterprise Edition run on reference runtimes. This reference runtime handle transactions, security, scalability, concurrency and the management of components to be deployed. Java Enterprise Edition is also known as Java 2 Platform Enterprise Edition (J2EE), and currently, it has been rebranded as Jakarta EE.<br>
+								Example: e-commerce, accounting, banking information systems.<br><br>
+								4. JavaFX<br>
+								JavaFX is used for creating desktop applications and also rich internet applications(RIAs) which can be run on a wide variety of devices. JavaFX has almost replaced Swing as the standard GUI library for Java Standard Edition. JavaFX support for desktop computers and web browsers.<br>
+								Object-Oriented Programming (OOPs) Concept<br>
+								1. Class<br>
+								In Java, a Class is a collection of objects. It is a logical entity. Class is also known as blueprint for which an individual object is created. Class does not occupy any space. Following are the components which a class includes:<br><br>
+								i. Modifiers<br>
+								Modifiers are used to define the scope of the class. A class can be public, private or protected.<br>
+								ii. Class name<br>
+								The name of the class should begin with a letter. The name of the class and the program is always the same.<br>
+								iii. Superclass(if any)<br>
+								Superclass is the Parent class. If any child class inherits the superclass then extends keyword is used.<br>
+								iv. Body<br>
+								The body of the class is surrounded by the braces {}.<br><br>
+								2. Object<br>
+								In Java, An Object is an entity which has state and behaviour. It is an instance of a class. It is a physical entity. An object contains an address which takes memory space. Objects do not contain details of data or code. Following are the things which an object contains:<br><br>
+								i. State<br>
+								It is used to represent the attributes of the object<br>
+								ii. Behaviour<br>
+								It is used to represent the methods of the object.<br>
+								iii. Identity<br>
+								It is the unique name of an object.<br>
+								3. Polymorphism<br>
+								If a task can be performed in many different ways then it is known as polymorphism. To achieve polymorphism in java we use method overloading(Static polymorphism) and method overriding(Dynamic polymorphism).<br>
+								4. Abstraction<br>
+								Abstraction means to hide internal details and showing only important functionalities. To achieve abstraction, abstract class and interface are used. And 100% abstraction is achieved from the interface.<br><br>
+								5. Inheritance<br>
+								In the concept of inheritance, one object acquires all the properties and behaviours of another object. Using this concept code can be reused. Inheritance is used to provide runtime polymorphism. Following are the important terminologies used:<br>
+								i. Super Class<br>
+								A superclass is the parent class or base class whose features can be inherited.<br>
+								ii. Sub Class<br>
+								A subclass is an intermediate class also known as a derived class, extended class or child class. It can inherit the superclass using the extend keyword.<br>
+								6. Encapsulation<br>
+								Encapsulation means wrapping up code into a single unit. The best example of encapsulation is the Java Class and also the Java bean. Java bean is totally encapsulated class. Encapsulation is also known as data hiding because here the data is hidden in a class.<br><br>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--footer-->
+			<div class="container navbar-default">
+				<div class="row jumbotron">
+					<div class="col-sm-4">
+						<h3>Instant open</h3>
+						<ul>
+							<li>Marks</li>
+							<li>Online Test</li>
+						</ul>
+					</div>
+					<div class="col-sm-4">
+						<h3>Our Goal</h3>
+						<p>
+							Our goal is to provide a native platform
+							for students to prepare	for placements and
+							build more secure future. Sharing knowledge
+							to get better results in order to improve
+							students productivity is what we look for.
+						</p>
+					</div>
+					<div class="col-sm-4 contactbutton">
+						<div>
+							<h3>Connect with us</h3><br>
+							
+						</div>
+						<div class="">
+							<a href="contactus.html" class="button">Contactus</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

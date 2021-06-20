@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+   <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<!--bootstrap4 offline css apply-->
+		<link rel="stylesheet" href="{% static 'bootstrap css/bootstrap.min.css' %}">
+		<!--userdefined css apply-->
+		<link rel="stylesheet" type="text/css" href="{% static 'userdefined css/style.css' %}">
+		<!--bootstrap4 offline jquery apply-->
+		<script type="text/javascript" src="{% static 'bootstrap js/jquery.js' %}" ></script>
+		<!--bootstrap4 offline js apply-->
+		<script type="text/javascript" src="{% static 'bootstrap js/bootstrap.min.js' %}"></script>
+		<!--user defined js-->
+		<script type="text/javascript" src="{% static 'userdefined js/event.js' %}"></script>
+    <title>quiz</title>
+  </head>
+  <body class="pagecolor">
+    <div class="d-flex" id="wrapper">
+      <!--start  body content-->
+      <div id="page-content-wrapper">
+        <!--start top of navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light border-bottom">
+          <!--start navbar toggler button-->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my" aria-controls="my" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--end navbar toggler button-->
+          <!--start top of navbar-->
+          <div class="collapse navbar-collapse" id="my">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0"style="height:50px;">
+              <li>
+
+              </li>
+            </ul>
+          </div>
+          <!--end top of navbar-->
+        </nav>
+        <!--end top of navbar-->
+        <!--start body container quize question and answer-->
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+              <!--fist radio button question-->
+              {% for q in que %}
+
+              <p class="quizefontstyle">
+                {{q.Qno}}) {{q.Que}}
+                <div class="answerwidth">
+                  <label class="quzieradioanswereffect">
+                    {{q.A}}<input type="radio" class="inputeffect" name={{q.Qno}}>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="quzieradioanswereffect">
+                    {{q.B}}<input type="radio" class="inputeffect" name={{q.Qno}}>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="quzieradioanswereffect">
+                    {{q.C}}<input type="radio" class="inputeffect" name={{q.Qno}}>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="quzieradioanswereffect">
+                    {{q.D}}<input type="radio" class="inputeffect" name={{q.Qno}}>
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </p>
+
+            {% endfor %}
+              <!--end radio button question-->
+              <!--second checkbox button question-->
+              <!--
+              <p class="quizefontstyle">
+                2) A can do a work in 15 days and B in 20 days. If they work on it together for 4 days, then the fraction of the work that is left is...
+                <div class="answerwidth">
+                  <label class="quziecheckboxnswereffect">One
+                    <input type="checkbox" class="checkinput">
+                    <span class="checkboxmark"></span>
+                  </label>
+                  <label class="quziecheckboxnswereffect">Two
+                    <input type="checkbox" class="checkinput">
+                    <span class="checkboxmark"></span>
+                  </label>
+                  <label class="quziecheckboxnswereffect">Three
+                    <input type="checkbox" class="checkinput">
+                    <span class="checkboxmark"></span>
+                  </label>
+                  <label class="quziecheckboxnswereffect">Four
+                    <input type="checkbox" class="checkinput">
+                    <span class="checkboxmark"></span>
+                  </label>
+                </div>
+              </p>
+              -->
+              <!--end checkbox button question-->
+            </div>
+          </div>
+          <!--start footer button group-->
+          <div class="row">
+            <div class="col-lg-12">
+              
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              
+            </div>
+          </div>
+          <div class="quizefooter">
+            <div class="row">
+              <div class="col-lg-9">
+
+              </div>
+              <div class="col-lg-3">
+                <a href="#">
+                  <button type="submit" class="btn btn-primary btn-sm buttonsubmit btn mt-3 btn-block rounded-pill text-uppercase tab">Submit</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!--end footer button group-->
+        </div>
+      </div>
+      <!--end body container quize question and answer-->
+    </div>
+    <!--start menu toggle script -->
+    <script>
+    $("#menu-toggle").click(function(e)
+    {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+    <!--end menu toggle script -->
+  </body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<!--bootstrap4 offline css apply-->
+		<link rel="stylesheet" href="{% static 'bootstrap css/bootstrap.min.css' %}">
+		<!--userdefined css apply-->
+		<link rel="stylesheet" type="text/css" href="{% static 'userdefined css/style.css' %}">
+		<!--bootstrap4 offline jquery apply-->
+		<script type="text/javascript" src="{% static 'bootstrap js/jquery.js' %}" ></script>
+		<!--bootstrap4 offline js apply-->
+		<script type="text/javascript" src="{% static 'bootstrap js/bootstrap.min.js' %}"></script>
+		<!--user defined js-->
+		<script type="text/javascript" src="{% static 'userdefined js/event.js' %}"></script>
+		<title>c++ notes</title>
+	</head>
+	<body class="pagecolor">
+		<div>
+			<div class="container">
+				<nav class="navbar navbar-expand-lg  navbar-light color fixed-top">
+					<a class="navbar-brand text-success" href="#">Train your skill</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="my">
+						<ul class="navbar-nav mr-auto mt-2 mt-lg-1">
+							<li class="nav-item">
+								<a class="nav-link" href="index">Home
+									<span class="sr-only">(current)</span>
+								</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="index" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Study Material
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+									<li class="dropdown-submenu">
+										<a class="dropdown-item" href="aptitude">
+											Aptitude
+										</a>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="dropdown-item dropdown-toggle" href="index">
+											Programming
+										</a>
+										<ul class="dropdown-menu">
+											<li>
+												<a class="dropdown-item" href="cnotes">C</a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="cppnotes">C++</a>
+											</li>
+											<li class="dropdown-submenu">
+												<a class="dropdown-item dropdown-toggle" href="index">Java</a>
+												<ul class="dropdown-menu">
+													<li>
+														<a class="dropdown-item" href="corejavanotes">
+															Core Java
+														</a>
+													</li>
+													<li>
+														<a class="dropdown-item" href="advancejavanotes">
+															Advanced Java
+														</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a class="dropdown-item" href="pythonnotes">
+													Python
+												</a>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="index" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Online Test</a>
+									<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+										<li class="dropdown-submenu">
+											<a class="dropdown-item dropdown-toggle" href="index">
+												Aptitude
+											</a>
+											<ul class="dropdown-menu">
+												<li>
+													<a class="dropdown-item" href="arithmetic">
+														Arithmetic
+													</a>
+												</li>
+												<li>
+													<a class="dropdown-item" href="datainterpretation">
+														Data Interpretation
+													</a>
+												</li>
+												<li>
+													<a class="dropdown-item" href="logical">
+														Logical
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-submenu">
+											<a class="dropdown-item dropdown-toggle" href="index">
+												Programming
+											</a>
+											<ul class="dropdown-menu">
+												<li>
+													<a class="dropdown-item" href="cquiz">C</a>
+												</li>
+												<li>
+													<a class="dropdown-item" href="cppquiz">C++</a>
+												</li>
+												<li class="dropdown-submenu">
+													<a class="dropdown-item dropdown-toggle" href="index">Java</a>
+													<ul class="dropdown-menu">
+														<li>
+															<a class="dropdown-item" href="corejavaquiz">
+																Core Java
+															</a>
+														</li>
+														<li>
+															<a class="dropdown-item" href="advancejavaquiz">
+																Advanced Java
+															</a>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<a class="dropdown-item" href="pythonquiz">Python</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-item dropdown dmenu">
+									<a class="nav-link dropdown-toggle" href="index" id="navbardrop" data-toggle="dropdown">
+										Student Corner
+									</a>
+									<div class="dropdown-menu sm-menu">
+										<a class="dropdown-item" href="index">Progess</a>
+										<a class="dropdown-item" href="index">Marks</a>
+										<a class="dropdown-item" href="index">Resume</a>
+									</div>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="contactus.html">Contact us</a>
+								</li>
+							</ul>
+							<form class="form-inline my-2 my-lg-0">
+								<ul class="navbar-nav mr-auto">
+									<li class="nav-item dropdown dmenu">
+										<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+											Hi...{{username}}
+										</a>
+										<div class="dropdown-menu sm-menu">
+											<a class="dropdown-item" href="#">View</a>
+											<a class="dropdown-item" href="#">Edit</a>
+											<a class="dropdown-item" href="logout">Logout</a>
+										</div>
+									</li>
+								</ul>
+							</form>
+						</div>
+					</div>
+				</nav>
+				<!--start boby content-->
+				<div class = "container jumbotron" style="padding: 10px; margin-top: 55px;">
+					<div class="row">
+						<div class="col-sm-12">
+							<h3>C++ Programming</h3>
+							<p class="notesstyle">
+								<br>
+								C++ is a middle-level programming language developed by Bjarne Stroustrup starting in 1979 at Bell Labs. C++ runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX.<br> This C++ tutorial adopts a simple and practical approach to describe the concepts of C++ for beginners to advanded software engineers.<br><br>
+								Why to Learn C++<br>
+								C++ is a MUST for students and working professionals to become a great Software Engineer. I will list down some of the key advantages of learning C++:<br>
+								C++ is very close to hardware, so you get a chance to work at a low level which gives you lot of control in terms of memory management, better performance and finally a robust software development.<br>
+								C++ programming gives you a clear understanding about Object Oriented Programming. You will understand low level implementation of polymorphism when you will implement virtual tables and virtual table pointers, or dynamic type identification.<br>
+								C++ is one of the every green programming languages and loved by millions of software developers. If you are a great C++ programmer then you will never sit without work and more importantly you will get highly paid for your work.
+								C++ is the most widely used programming languages in application and system programming. So you can choose your area of interest of software development.<br>
+								C++ really teaches you the difference between compiler, linker and loader, different data types, storage classes, variable types their scopes etc.<br>
+								There are 1000s of good reasons to learn C++ Programming. But one thing for sure, to learn any programming language, not only C++, you just need to code, and code and finally code until you become expert.<br><br>
+								Hello World using C++<br>
+								Just to give you a little excitement about C++ programming, I'm going to give you a small conventional C++ Hello World program, You can try it using Demo link
+								C++ is a super set of C programming with additional implementation of object-oriented concepts.<br><br>
+								Live Demo<br>
+								#include <iostream><br>
+								using namespace std;<br>
+								// main() is where program execution begins.<br>
+								int main() <br>{<br>
+								cout << "Hello World"; // prints Hello World<br>
+								return 0;<br>
+								}<br><br>
+								There are many C++ compilers available which you can use to compile and run above mentioned program:<br><br>
+								1) Apple C++. Xcode<br>
+								2) Bloodshed Dev-C++<br>
+								3) Clang C++<br>
+								4) Cygwin (GNU C++)<br>
+								5) Mentor Graphics<br>
+								6) MINGW - "Minimalist GNU for Windows"<br>
+								7) GNU CC source<br>
+								8) IBM C++<br>
+								9) Intel C++<br>
+								10) Microsoft Visual C++<br>
+								11) racle C++<br>
+								12) HP C++<br>
+								It is really impossible to give a complete list of all the available compilers. The C++ world is just too large and too much new is happening.<br><br>
+								Applications of C++ Programming<br>
+								As mentioned before, C++ is one of the most widely used programming languages. It has it's presence in almost every area of software development. I'm going to list few of them here:<br><br>
+								Application Software Development<br> C++ programming has been used in developing almost all the major Operating Systems like Windows, Mac OSX and Linux. Apart from the operating systems, the core part of many browsers like Mozilla Firefox and Chrome have been written using C++. C++ also has been used in developing the most popular database system called MySQL.<br><br>
+								Programming Languages Development<br>C++ has been used extensively in developing new programming languages like C#, Java, JavaScript, Perl, UNIX’s C Shell, PHP and Python, and Verilog etc.<br><br>
+								Computation Programming<br>C++ is the best friends of scientists because of fast speed and computational efficiencies.<br><br>
+								Games Development<br>C++ is extremely fast which allows programmers to do procedural programming for CPU intensive functions and provides greater control over hardware, because of which it has been widely used in development of gaming engines.<br><br>
+								Embedded System<br>C++ is being heavily used in developing Medical and Engineering Applications like softwares for MRI machines, high-end CAD/CAM systems etc.<br>
+								This list goes on, there are various areas where software developers are happily using C++ to provide great softwares. I highly recommend you to learn C++ and contribute great softwares to the community.<br><br>
+								C++ is a statically typed, compiled, general-purpose, case-sensitive, free-form programming language that supports procedural, object-oriented, and generic programming.<br><br>
+								C++ is regarded as a middle-level language, as it comprises a combination of both high-level and low-level language features.<br><br>
+								C++ was developed by Bjarne Stroustrup starting in 1979 at Bell Labs in Murray Hill, New Jersey, as an enhancement to the C language and originally named C with Classes but later it was renamed C++ in 1983.<br><br>
+								C++ is a superset of C, and that virtually any legal C program is a legal C++ program.<br><br>
+								Note − A programming language is said to use static typing when type checking is performed during compile-time as opposed to run-time.<br><br>
+								Object-Oriented Programming<br>
+								C++ fully supports object-oriented programming, including the four pillars of object-oriented development<br>
+								i) Encapsulation<br>
+								ii) Data hiding<br>
+								iii) Inheritance<br>
+								iv) Polymorphism<br>
+								v) Standard Libraries<br>
+								Standard C++ consists of three important parts −<br>
+								The core language giving all the building blocks including variables, data types and literals, etc.<br>
+								The C++ Standard Library giving a rich set of functions manipulating files, strings, etc.<br>
+								The Standard Template Library (STL) giving a rich set of methods manipulating data structures, etc.<br><br>
+								The ANSI Standard<br>
+								The ANSI standard is an attempt to ensure that C++ is portable; that code you write for Microsoft's compiler will compile without errors, using a compiler on a Mac, UNIX, a Windows box, or an Alpha.<br>
+								The ANSI standard has been stable for a while, and all the major C++ compiler manufacturers support the ANSI standard.
+								Learning C++<br>
+								The most important thing while learning C++ is to focus on concepts<br>								
+								The purpose of learning a programming language is to become a better programmer; that is, to become more effective at designing and implementing new systems and at maintaining old ones.<br>
+								C++ supports a variety of programming styles. You can write in the style of Fortran, C, Smalltalk, etc., in any language. Each style can achieve its aims effectively while maintaining runtime and space efficiency.<br><br>
+								Use of C++<br>
+								C++ is used by hundreds of thousands of programmers in essentially every application domain.<br>
+								C++ is being highly used to write device drivers and other software that rely on direct manipulation of hardware under realtime constraints.<br>
+								C++ is widely used for teaching and research because it is clean enough for successful teaching of basic concepts.<br>
+								Anyone who has used either an Apple Macintosh or a PC running Windows has indirectly used C++ because the primary user interfaces of these systems are written in C++.<br><br>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--footer-->
+			<div class="container navbar-default">
+				<div class="row jumbotron">
+					<div class="col-sm-4">
+						<h3>Instant open</h3>
+						<ul>
+							<li>Marks</li>
+							<li>Online Test</li>
+						</ul>
+					</div>
+					<div class="col-sm-4">
+						<h3>Our Goal</h3>
+						<p>
+							Our goal is to provide a native platform
+							for students to prepare	for placements and
+							build more secure future. Sharing knowledge
+							to get better results in order to improve
+							students productivity is what we look for.
+						</p>
+					</div>
+					<div class="col-sm-4 contactbutton">
+						<div>
+							<h3>Connect with us</h3><br>
+							
+						</div>
+						<div class="">
+							<a href="contactus.html" class="button">Contactus</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

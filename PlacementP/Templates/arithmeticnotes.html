@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<!--bootstrap4 offline css apply-->
+		<link rel="stylesheet" href="{% static 'bootstrap css/bootstrap.min.css' %}">
+		<!--userdefined css apply-->
+		<link rel="stylesheet" type="text/css" href="{% static 'userdefined css/style.css' %}">
+		<!--bootstrap4 offline jquery apply-->
+		<script type="text/javascript" src="{% static 'bootstrap js/jquery.js' %}" ></script>
+		<!--bootstrap4 offline js apply-->
+		<script type="text/javascript" src="{% static 'bootstrap js/bootstrap.min.js' %}"></script>
+		<!--user defined js-->
+		<script type="text/javascript" src="{% static 'userdefined js/event.js' %}"></script>
+		<title>arithmetic notes</title>
+	</head>
+	<body class="pagecolor">
+		<div>
+			<div class="container">
+				<nav class="navbar navbar-expand-lg  navbar-light color fixed-top">
+					<a class="navbar-brand text-success" href="#">Train your skill</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="my">
+						<ul class="navbar-nav mr-auto mt-2 mt-lg-1">
+							<li class="nav-item">
+								<a class="nav-link" href="index">Home
+									<span class="sr-only">(current)</span>
+								</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="index" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Study Material
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+									<li class="dropdown-submenu">
+										<a class="dropdown-item" href="aptitude">
+											Aptitude
+										</a>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="dropdown-item dropdown-toggle" href="index">
+											Programming
+										</a>
+										<ul class="dropdown-menu">
+											<li>
+												<a class="dropdown-item" href="cnotes">C</a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="cppnotes">C++</a>
+											</li>
+											<li class="dropdown-submenu">
+												<a class="dropdown-item dropdown-toggle" href="index">Java</a>
+												<ul class="dropdown-menu">
+													<li>
+														<a class="dropdown-item" href="corejavanotes">
+															Core Java
+														</a>
+													</li>
+													<li>
+														<a class="dropdown-item" href="advancejavanotes">
+															Advanced Java
+														</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a class="dropdown-item" href="pythonnotes">
+													Python
+												</a>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="index" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Online Test</a>
+									<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+										<li class="dropdown-submenu">
+											<a class="dropdown-item dropdown-toggle" href="index">
+												Aptitude
+											</a>
+											<ul class="dropdown-menu">
+												<li>
+													<a class="dropdown-item" href="arithmetic">
+														Arithmetic
+													</a>
+												</li>
+												<li>
+													<a class="dropdown-item" href="datainterpretation">
+														Data Interpretation
+													</a>
+												</li>
+												<li>
+													<a class="dropdown-item" href="logical">
+														Logical
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-submenu">
+											<a class="dropdown-item dropdown-toggle" href="index">
+												Programming
+											</a>
+											<ul class="dropdown-menu">
+												<li>
+													<a class="dropdown-item" href="cquiz">C</a>
+												</li>
+												<li>
+													<a class="dropdown-item" href="cppquiz">C++</a>
+												</li>
+												<li class="dropdown-submenu">
+													<a class="dropdown-item dropdown-toggle" href="index">Java</a>
+													<ul class="dropdown-menu">
+														<li>
+															<a class="dropdown-item" href="corejavaquiz">
+																Core Java
+															</a>
+														</li>
+														<li>
+															<a class="dropdown-item" href="advancejavaquiz">
+																Advanced Java
+															</a>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<a class="dropdown-item" href="pythonquiz">Python</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-item dropdown dmenu">
+									<a class="nav-link dropdown-toggle" href="index" id="navbardrop" data-toggle="dropdown">
+										Student Corner
+									</a>
+									<div class="dropdown-menu sm-menu">
+										<a class="dropdown-item" href="index">Progess</a>
+										<a class="dropdown-item" href="index">Marks</a>
+										<a class="dropdown-item" href="index">Resume</a>
+									</div>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="contactus.html">Contact us</a>
+								</li>
+							</ul>
+							<form class="form-inline my-2 my-lg-0">
+								<ul class="navbar-nav mr-auto">
+									<li class="nav-item dropdown dmenu">
+										<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+											Hi...{{username}}
+										</a>
+										<div class="dropdown-menu sm-menu">
+											<a class="dropdown-item" href="#">View</a>
+											<a class="dropdown-item" href="#">Edit</a>
+											<a class="dropdown-item" href="logout">Logout</a>
+										</div>
+									</li>
+								</ul>
+							</form>
+						</div>
+					</div>
+				</nav>
+				<!--create middle panel-->
+				<div class="container" style="padding-top: 30px;">
+					<div class="row jumbotron">
+						<div class="col-sm-4 col-lg-12">
+							<p class="notesstyle">
+								<br> Prelims Strategy<br><br>
+								In the Prelims exam, the following topics are generally asked:<br>
+								1) Number Series<br>
+								2) Simplification / Approximation<br>
+								3) Data interpretation<br>
+								4) Quadratic Equation<br>
+								5) Arithmetic Topics (Profit & loss, Percentage, S.I, C.I, Ages, Averages, etc.)<br>
+								6) Data Sufficiency<br>
+								7) Inequalities<br><br>
+								You will be having around 20 minutes to complete 35 questions of this section in the prelims exam. Plan out an exam strategy in the way that you know what you have to attempt first and how many questions you need to target in 20 minutes. Just attempt simplification/approximations questions first. After that go for quadratic equations and number series. Only give a single attempt to these topics. Leave the question if it is taking much time. Then go for Data Interpretation and at last attempt miscellaneous questions whichever you able to do.
+								<br><br>Mains Strategy<br><br>
+								In most of the exams, the Mains level exam consists of the major chunk of Data interpretation questions. With this, you have to prepare Data Sufficiency and all the topics covered in the Prelims exam having a higher difficulty level.<br>
+								In this, you will be given a maximum of 45 minutes to complete the questions. Also, the level of the mains is hard than that of prelims. Attempt only those questions which you are sure of. Speed and accuracy play an important role here. Don't guess and mark an answer after calculating it only.<br><br>
+								1. Number Series<br>
+								1) Form this topic, generally, a set of 5 questions is asked out of which 2-3 questions are easily doable. Currently, Missing number series & wrong number series is asked generally.<br>
+								2) Practice a lot and get familiar with the common patterns and then try to apply them while practicing questions.<br>
+								3) Number series questions just need the power to analyze the pattern. If you find it, your answer will be there in seconds.<br>
+								4) Do not spend enough time on number series, if you are unable to find out the pattern in a minute, then leave that question and move to another one.<br><br>
+								2. Simplification/ Approximation<br>
+								1) This topic is also asked in a set of 5 questions. It is the easiest topic and just needs good calculation speed.
+								2) Follow the ‘BODMAS’ rule and apply operations in priority according to it.<br>
+								3) While solving approximation questions, avoid calculating the exact figure and use approximate values in the calculation.
+								4) To ace this section, try to learn the tables up to 25, squares up to 30 and cubes up to 20. It will save your calculation time and hence, increases your speed.
+								5) You can also use the option elimination technique to solve this question.<br><br>
+								3. Data Interpretation<br>
+								This topic includes:<br>
+								1) Line Graph<br>
+								2) Bar Chart<br>
+								3) Table Graph<br>
+								4) Pie Chart<br>
+								5) Caselet<br>
+								6) Mixed Graphs<br>
+								7)Missing D.I<br><br>
+								Data interpretation is the most scoring and time-consuming section. We can expect 1 – 2 sets of data interpretation each having 5 questions in the Prelims exam and 4 to 5 sets in the Mains exam. So, to score the good marks, you have to become the master of this section. Level of the questions from this topic in Prelims is somewhat easy but in Mains, it is a little hard and requires a deep understanding of some miscellaneous topics like profit and loss, Simple and Compound Interest, probability, time speed, and distance, etc.<br><br>
+								Here are some important tips to solve Data Interpretation questions:<br><br>
+								Work on your calculation skills: DI requires the use of quick calculations like addition, subtraction, multiplication, division, ratios, percentage values, etc. Practice a lot of questions to increase your speed. Also, try to do the calculations without the use of pen and paper.
+								Try to analyze answers form the graph: <br><br>Many questions can be answered by just analyzing the data given in the graph. Figure out the answer by just eliminating options and visual estimation of the graph.<br>
+								Scanning the right data: Students often commit the mistake of picking the wrong data from the graph in a hurry, mostly in case of tables and bar/line charts. Always be careful while solving the questions and take up the value carefully.<br> While practicing, identify the values by looking at the graph. Many time it happens that candidates solve the question correctly but didn't check the units given in the graph and option due to which sometimes, they mark the wrong answers. So, make a habit of observing units while practicing D.I questions.<br>
+								Don't use calculators while practice: Don't use calculators during practicing questions as it will decrease your ability to calculate in exams.<br><br>
+								Prepare Arithmetic topics:<br> In Mains exam, you will often find the questions from the miscellaneous topics in the D.I and thus you have to strengthen your command over it to score good marks in the exam<br><br>
+								Practice previous year D.I questions: Practice is the only key that will help you understand the nature of the questions. Practice questions from the previous year papers to check your preparation level. Check and match your solutions after attempting, you will get to know about your weak areas and then improve them accordingly.
+								Miscellaneous Topics:<br><br>
+								1. Profit and Loss<br><br>
+								Profit, Loss, and Discount is a crucial topic of Quantitative Aptitude.<br>
+								You will find the application of this topic in certain Data Interpretation questions as well.<br>
+								Learn the important formulas and have an understanding of its basics concepts.<br>
+								Cost Price - The price at which an article is purchased, is called its cost price. It is abbreviated as C.P.<br>
+								Selling Price - The price, at which an article is sold, is called its selling prices, abbreviated as S.P.<br><br>
+								Profit/gain = S.P – C.P<br>
+								Profit % = Profit/(C.P)×100<br>
+								S.P = (100+gain % )/100  ×C.P<br>
+								C.P = 100/(100+gain %)×S.P<br>
+								Loss = C.P – S.P<br>
+								Loss % = Loss/(C.P)×100<br>
+								S.P = (100-Loss %)/100×C.P<br>
+								C.P = 100/(100-Loss %)×S.P
+								<br><br>2. Percentages<br><br>
+								The percentage is an important topic to prepare. This topic is often used in the calculation of other topics like Profit & Loss, Approximation, Data Interpretation, etc. Learn some short tricks to calculate :<br><br>
+								a. Calculate %: Find a% of b- a % of b = [b * a/100]<br><br>
+								b. Express a/b as x %: a / b = (a/b * 100)<br><br>
+								c. Increasing/Decreasing a number by a given %.
+								Increase by a% = [100 + a / 100]   / Decrease by a% = [100 - a / 100]
+								d. % increase/decrease in a number
+								% increase = [increase / original number] * 100 % decrease =[decrease / original number] * 100
+								<br><br>3.  Averages<br><br>
+								Form this topic, you will expect 1 question in the Prelims exam. It is also used in Data Interpretation calculations. Just practice its questions to understand its usage. Learn the basic formulae used:<br>
+								Average of numbers= {Sum of Numbers / Total no. of numbers}
+								<br><br>4. Simple Interest:<br><br>
+								Learn all basic formulas.<br><br>
+								Understand the short tricks to solve the questions.<br>
+								Know about the meaning of basic terms like interest, principal, the rate of interest, time, amount, etc.<br><br>
+								Formula: I = [( P X R X T )/( 100 )]
+								Where P = Principle, R = Rate of per annum, T = Number of years<br><br>
+								5. Learn the conversion of Time Period and Rate of Interest.<br><br>
+								5. Compound Interest:<br><br>
+								Learn the basic formula of it : A = P * (1 + (R / 100)) T
+								Where A= total amount that is to be paid at the end of the mentioned time<br><br>
+								R = rate of interest<br>
+								P = principal amount that was borrowed initially<br>
+								T = time for which the money was borrowed<br>
+								I = A – P or P * (((1 + (R / 100)) T) – 1)<br><br>
+								Be clear with the difference between Simple Interest and Compound Interest. Like, In the case of compound interest, the rate of interest is applied to the initial amount (Principal) borrowed and the accumulated interest over the previous period.<br>
+								S.I is the same throughout the years and C.I keeps on changing throughout the period for which money has been borrowed.<br>
+								Usage of percentage concepts is a major requirement in S.I and C.I questions. Maintain a good grip on the percentage concepts to master this topic.
+								<br><br>6. Time and Work:<br><br>
+								Understand its basics concepts and grasp the important formula. Its application is widely used in wages, data sufficiency, and pipes and cistern question. here are some important rules which you should know<br><br>
+								If A can do a piece of work in x days, then A’s 1-day work = 1/x<br><br>
+								If A’s one day work is 1/x, A can finish the total work in x days.<br><br>
+								If A is x times as efficient as B then<br>
+								The ratio of work done by A: B individually = x: 1<br>
+								The ratio of time taken by A and B individually to finish the work = 1: x
+								<br><br>7. Time, Speed and Distance:<br><br>
+								Understand the basic concept of it and learn important formulas<br><br>
+								(i) Speed Distance Time formula is mathematically written as:-<br> Speed = distance/time<br><br>
+								The Formula of Time :- time = distance/ Speed<br><br>
+								The formula of Distance:-Distance = (Speed * Time)
+								<br><br>8. Partnership<br><br>
+								This is a very prominent part of most of the exams. These questions are really scoring as well because these questions are really scoring. Check below what this topic is about and how are typical questions solved.
+								<br><br>What is Partnership?<br><br>
+								When two or more people join hands to create a start-up or some business it’s called a ‘partnership’ business. Typically, they invest some capital and earn some profit. And, this profit is distributed among partners either in some prefixed ratio or the ratio of their investment. In exams, mostly profit distribution is based on later types. The calculation for-profit based on investment is done as <br>shown below:<br>
+								P1: P2 = C1×T1: C2×T2<br>
+								Here, P1 = Profit for Partner 1.<br>
+								C1 = Capital by Partner 1.<br>
+								T1 = Time period for which Partner 1 invested his capital.<br>
+								P2 = Profit for Partner 2.<br>
+								C2 = Capital by Partner 2.<br>
+								T2 = Time period for which Partner 2 invested his capital.
+								<br><br>9. Ratio and Proportion<br><br>
+								You should learn all basic formulas to attempt the questions on this topic. Learn all the Short tricks to solve the questions quickly and save time.
+								Understand the meaning of basic terms like ratio, Proportion, their types, etc.
+								Solve examples or questions asked in previous year banking exams to understand the application usage of questions.
+								<br><br>10. Permutation and Combination:<br>
+								Permutation & Combination has the direct application which is most widely asked in almost every banking exam. So basics of P&C must be very clear for solving those questions.
+								You must know about the term known as ‘factorial’. The product of the numbers starting from 1 up to a number ‘n’ is known as the factorial of number ‘n’.
+								<br><br>It means n! = 1x2x3x4x5x6……..x(n-2)x(n-1) x n<br><br>
+								In the permutation, we select the things and then arrange them to check out different possible ways of arrangement. So basically permutation is a two-step process.<br>
+								The formula used for permutation is nPr = n!/(n-r)!<br>
+								In combination, we select the things at random & check out the different possible ways of selection. So this is a one-step process. The formula used for the combination is nCr
+								<br><br>nC­r = n! / [r! x (n-r)!]
+								<br><br>11. Probability<br>
+								A word that can also be used in the place of ‘Probability’ is ‘Chance’. We all are well aware of the word ‘chance’. We use it in our daily life. Whatever we do, whatever we observe, there is always a chance that this is going to happen or not. When we want to find out the value of this chance in a quantitative form, at that point of time we use ‘Probability’ at the place of ‘Chance’.<br><br>
+							</p>
+						</div>
+					</div>
+				</div>
+				<!--footer-->
+				<div class="container navbar-default">
+					<div class="row jumbotron">
+						<div class="col-sm-4">
+							<h3>Instant open</h3>
+							<ul>
+								<li>Marks</li>
+								<li>Online Test</li>
+							</ul>
+						</div>
+						<div class="col-sm-4">
+							<h3>Our Goal</h3>
+							<p>
+								Our goal is to provide a native platform
+								for students to prepare	for placements and
+								build more secure future. Sharing knowledge
+								to get better results in order to improve
+								students productivity is what we look for.
+							</p>
+						</div>
+						<div class="col-sm-4 contactbutton">
+							<div>
+								<h3>Connect with us</h3><br>
+								
+							</div>
+							<div class="">
+								<a href="contactus.html" class="button">Contactus</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</body>
+	</html>

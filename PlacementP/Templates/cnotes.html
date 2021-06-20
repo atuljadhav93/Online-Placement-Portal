@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<!--bootstrap4 offline css apply-->
+		<link rel="stylesheet" href="{% static 'bootstrap css/bootstrap.min.css' %}">
+		<!--userdefined css apply-->
+		<link rel="stylesheet" type="text/css" href="{% static 'userdefined css/style.css' %}">
+		<!--bootstrap4 offline jquery apply-->
+		<script type="text/javascript" src="{% static 'bootstrap js/jquery.js' %}" ></script>
+		<!--bootstrap4 offline js apply-->
+		<script type="text/javascript" src="{% static 'bootstrap js/bootstrap.min.js' %}"></script>
+		<!--user defined js-->
+		<script type="text/javascript" src="{% static 'userdefined js/event.js' %}"></script>
+		<title>c notes</title>
+	</head>
+	<body class="pagecolor">
+		<div>
+			<div class="container">
+				<nav class="navbar navbar-expand-lg  navbar-light color fixed-top">
+					<a class="navbar-brand text-success" href="#">Train your skill</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="my">
+						<ul class="navbar-nav mr-auto mt-2 mt-lg-1">
+							<li class="nav-item">
+								<a class="nav-link" href="index">Home
+									<span class="sr-only">(current)</span>
+								</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="index" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Study Material
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+									<li class="dropdown-submenu">
+										<a class="dropdown-item" href="aptitude">
+											Aptitude
+										</a>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="dropdown-item dropdown-toggle" href="index">
+											Programming
+										</a>
+										<ul class="dropdown-menu">
+											<li>
+												<a class="dropdown-item" href="cnotes">C</a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="cppnotes">C++</a>
+											</li>
+											<li class="dropdown-submenu">
+												<a class="dropdown-item dropdown-toggle" href="index">Java</a>
+												<ul class="dropdown-menu">
+													<li>
+														<a class="dropdown-item" href="corejavanotes">
+															Core Java
+														</a>
+													</li>
+													<li>
+														<a class="dropdown-item" href="advancejavanotes">
+															Advanced Java
+														</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a class="dropdown-item" href="pythonnotes">
+													Python
+												</a>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="index" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Online Test</a>
+									<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+										<li class="dropdown-submenu">
+											<a class="dropdown-item dropdown-toggle" href="index">
+												Aptitude
+											</a>
+											<ul class="dropdown-menu">
+												<li>
+													<a class="dropdown-item" href="arithmetic">
+														Arithmetic
+													</a>
+												</li>
+												<li>
+													<a class="dropdown-item" href="datainterpretation">
+														Data Interpretation
+													</a>
+												</li>
+												<li>
+													<a class="dropdown-item" href="logical">
+														Logical
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-submenu">
+											<a class="dropdown-item dropdown-toggle" href="index">
+												Programming
+											</a>
+											<ul class="dropdown-menu">
+												<li>
+													<a class="dropdown-item" href="cquiz">C</a>
+												</li>
+												<li>
+													<a class="dropdown-item" href="cppquiz">C++</a>
+												</li>
+												<li class="dropdown-submenu">
+													<a class="dropdown-item dropdown-toggle" href="index">Java</a>
+													<ul class="dropdown-menu">
+														<li>
+															<a class="dropdown-item" href="corejavaquiz">
+																Core Java
+															</a>
+														</li>
+														<li>
+															<a class="dropdown-item" href="advancejavaquiz">
+																Advanced Java
+															</a>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<a class="dropdown-item" href="pythonquiz">Python</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-item dropdown dmenu">
+									<a class="nav-link dropdown-toggle" href="index" id="navbardrop" data-toggle="dropdown">
+										Student Corner
+									</a>
+									<div class="dropdown-menu sm-menu">
+										<a class="dropdown-item" href="index">Progess</a>
+										<a class="dropdown-item" href="index">Marks</a>
+										<a class="dropdown-item" href="index">Resume</a>
+									</div>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="contactus.html">Contact us</a>
+								</li>
+							</ul>
+							<form class="form-inline my-2 my-lg-0">
+								<ul class="navbar-nav mr-auto">
+									<li class="nav-item dropdown dmenu">
+										<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+											Hi...{{username}}
+										</a>
+										<div class="dropdown-menu sm-menu">
+											<a class="dropdown-item" href="#">View</a>
+											<a class="dropdown-item" href="#">Edit</a>
+											<a class="dropdown-item" href="logout">Logout</a>
+										</div>
+									</li>
+								</ul>
+							</form>
+						</div>
+					</div>
+				</nav>
+				<!--start boby content-->
+				<div class = "container jumbotron" style="padding: 10px; margin-top: 55px;">
+					<div class="row">
+						<div class="col-sm-12">
+							<h3>C Programming</h3>
+							<p class="notesstyle">
+								<br>
+								C is a general-purpose high level language that was originally developed by Dennis Ritchie for the Unix operating system. It was first implemented on the Digital Eqquipment Corporation PDP-11 computer in 1972.
+								The Unix operating system and virtually all Unix applications are written in the C language. C has now become a widely used professional language for various reasons.
+								1) Easy to learn<br><br>
+								2) Structured language.<br>
+								3) It produces efficient programs.<br>
+								4) It can handle low-level activities.<br>
+								5) It can be compiled on a variety of computers.<br><br>
+								Facts about C<br>
+								C was invented to write an operating system called UNIX.
+								C is a successor of B language which was introduced around 1970<br>
+								The language was formalized in 1988 by the American National Standard Institue (ANSI).<br>
+								By 1973 UNIX OS almost totally written in C.<br><br>
+								Today C is the most widely used System Programming Language.
+								Most of the state of the art software have been implemented using C<br><br>
+								Why to use C ?<br>
+								C was initially used for system development work, in particular the programs that make-up the operating system. C was adoped as a system development language because it produces code that runs nearly as fast as code written in assembly language. Some examples of the use of C might be:<br>
+								1) Operating Systems<br>
+								2) Language Compilers<br>
+								3) Assemblers<br>
+								4) Text Editors<br>
+								5) Print Spoolers<br>
+								6) Network Drivers<br>
+								7) Modern Programs<br>
+								8) Data Bases<br>
+								9) Language Interpreters<br>
+								10) Utilities<br>
+								11) C Program File<br><br>
+								All the C programs are writen into text files with extension ".c" for example hello.c. You can use "vi" editor to write your C program into a file.<br>
+								This tutorial assumes that you know how to edit a text file and how to write programming insturctions inside a program file.<br><br>
+								C Compilers<br><br>
+								When you write any program in C language then to run that program you need to compile that program using a C Compiler which converts your program into a language understandable by a computer. This is called machine language (ie. binary format). So before proceeding, make sure you have C Compiler available at your computer. It comes alongwith all flavors of Unix and Linux.<br>
+								If you are working over Unix or Linux then you can type gcc -v or cc -v and check the result. You can ask your system administrator or you can take help from anyone to identify an available C Compiler at your computer.<br>
+								If you don't have C compiler installed at your computer then you can use below given link to download a GNU C Compiler and use it.<br>
+								To know more about compilation you can go through this small tutorial Learn Makefile<br><br>
+							</p>
+							<h4>C Programming Sturcture</h4><br>
+							<p class="notesstyle">
+								A C program basically has the following form:<br>
+								1) Preprocessor Commands<br>
+								2) Functions<br>
+								3) Variables<br>
+								4) Statements & Expressions<br>
+								5) Comments<br>
+								The following program is written in the C programming language. Open a text file hello.c using vi editor and put the following lines inside that file<br><br>
+							</p>
+							#include <stdio.h><br>
+							int main()<br>
+							{<br>
+							&nbsp;&nbsp;/* My first program */<br>
+							&nbsp;&nbsp;printf("Hello, World! \n");<br>
+							&nbsp;&nbsp;return 0;<br>
+							}<br><br>
+							<p class="notesstyle">
+								Preprocessor Commands: These commands tells the compiler to do preprocessing before doing actual compilation. Like #include <stdio.h> is a preprocessor command which tells a C compiler to include stdio.h file before going to actual compilation. You will learn more about C Preprocessors in C Preprocessors session.<br>
+								Functions: are main building blocks of any C Program. Every C Program will have one or more functions and there is one mandatory function which is called main() function. <br>This function is prefixed with keyword int which means this function returns an integer value when it exits. This integer value is retured using return statement.<br>
+								The C Programming language provides a set of built-in functions. In the above example printf() is a C built-in function which is used to print anything on the screen. Check Builtin function section for more detail.<br>
+								You will learn how to write your own functions and use them in Using Function session.<br>
+								Variables: are used to hold numbers, strings and complex data for manipulation. You will learn in detail about variables in C Variable Types.<br><br>
+								Statements & Expressions :<br>Expressions combine variables and constants to create new values. Statements are expressions, assignments, function calls, or control flow statements which make up C programs.<br><br>
+								Comments: <br>are used to give additional useful information inside a C Program. All the comments will be put inside /*...*/ as given in the example above. A comment can span through multiple lines.<br><br>
+								C has a concept of 'data types' which are used to define a variable before its use. The definition of a variable will assign storage for the variable and define the type of data that will be held in the location.<br><br>
+								The value of a variable can be changed any time.
+								C has the following basic built-in datatypes.<br>
+								1) int<br>
+								2) float<br>
+								3) double<br>
+								4) char<br>
+								Please note that there is not a boolean data type. C does not have the traditional view about logical comparison, but thats another story.<br><br>
+								int - data type<br>
+								int is used to define integer numbers.<br>
+								{<br>
+								int Count;<br>
+								Count = 5;<br>
+								}<br><br>
+								float - data type<br>
+								float is used to define floating point numbers.<br>
+								{<br>
+								float Miles;<br>
+								Miles = 5.6;<br>
+								}<br><br>
+								double - data type<br>
+								double is used to define BIG floating point numbers. It reserves twice the storage for the number. On PCs this is likely to be 8 bytes.<br><br>
+								{<br>
+								double Atoms;<br>
+								Atoms = 2500000;<br>
+								}<br><br>
+								char - data type<br>
+								char defines characters.<br>
+								{<br>
+								char Letter;<br>
+								Letter = 'x';<br>
+								}<br><br>
+								Modifiers<br><br>
+								The data types explained above have the following modifiers.<br>
+								1) short<br>
+								2) long<br>
+								3) signed<br>
+								4) unsigned<br>
+								The modifiers define the amount of storage allocated to the variable. The amount of storage allocated is not cast in stone. ANSI has the following rules:<br><br>
+								short int <=    int <= long int<br>
+								float <= double <= long double<br><br>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--footer-->
+			<div class="container navbar-default">
+				<div class="row jumbotron">
+					<div class="col-sm-4">
+						<h3>Instant open</h3>
+						<ul>
+							<li>Marks</li>
+							<li>Online Test</li>
+						</ul>
+					</div>
+					<div class="col-sm-4">
+						<h3>Our Goal</h3>
+						<p>
+							Our goal is to provide a native platform
+							for students to prepare	for placements and
+							build more secure future. Sharing knowledge
+							to get better results in order to improve
+							students productivity is what we look for.
+						</p>
+					</div>
+					<div class="col-sm-4 contactbutton">
+						<div>
+							<h3>Connect with us</h3><br>
+							
+						</div>
+						<div class="">
+							<a href="contactus.html" class="button">Contactus</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
